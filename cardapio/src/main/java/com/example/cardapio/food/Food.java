@@ -39,4 +39,11 @@ public class Food {
 
     // Armazena o preço do prato
     private Integer price;
+
+    public Food(FoodRequestDTO data){
+        this.image = data.image();
+        this.title = data.title();
+        this.price = data.price();
+
+    }
 }
